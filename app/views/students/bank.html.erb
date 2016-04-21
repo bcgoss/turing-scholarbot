@@ -1,0 +1,9 @@
+<%= form_tag(transfer_path) do %>
+  <%= label_tag :transfer_from %>
+  <%= collection_select(:transfer_from, :student_id, @students, :id, :name) %>
+  <%= label_tag :transfer_to %>
+  <%= collection_select(:transfer_to, :student_id, @students, :id, :name) %>
+  <%= label_tag :amount %>
+  <%= number_field_tag :amount %>
+  <%= submit_tag "Submit" %>
+<% end %>

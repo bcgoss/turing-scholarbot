@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
 
-  resources :students, only: [:show] do
+  get '/students/bank', to: 'students#bank', as: :bank
+  post '/students/transfer', to: 'students#transfer', as: :transfer
+
+  resources :students, only: [:show, :index] do
     resources :enrollments, only: [:new, :create]
   end
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

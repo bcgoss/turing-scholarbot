@@ -1,0 +1,16 @@
+<table class="bordered">
+  <thead>
+    <tr>
+        <th data-field="student">Student Name</th>
+        <th data-field="teacher">Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @students.each do |student| %>
+      <tr class="student">
+        <td><%= student.name %></td>
+        <td><%= student.balance %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
