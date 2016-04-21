@@ -1,5 +1,12 @@
 # Callbacks & Scopes
 
+## Goals
+
+* define callbacks; explain good and bad use cases
+* implement callbacks in a Rails app
+* refactor a controller to use callbacks where appropriate and a PORO when not
+* implement filter functionality using both class methods and scopes
+
 ## What is a Callback?
 
 ### IRL
