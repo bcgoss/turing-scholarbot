@@ -1,0 +1,11 @@
+<h1>New Enrollment</h1>
+
+<%= form_for([@student, @enrollment]) do |f| %>
+  <% Course.all.each do |course| %>
+    <div>
+      <%= check_box_tag 'enrollment[course_ids][]', course.id, false, id: "course-#{course.id}" %>
+      <%= course.subject %>
+    </div>
+  <% end %>
+  <%= f.submit %>
+<% end %>
