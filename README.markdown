@@ -191,6 +191,14 @@ class Order < ActiveRecord::Base
 end
 ```
 
+### If time permits: Transactions
+
+* What is a transaction?
+* When should a transaction take place?
+* What is the syntax of a transaction? 
+
+Check out the test `/test/integration/user_adjusts_bank_balance_test.rb`
+
 ## Try It
 
 Modify your implementation to use scopes instead of class methods. Make sure your tests still pass. 
