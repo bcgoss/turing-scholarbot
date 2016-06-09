@@ -4,7 +4,13 @@ class Student < ActiveRecord::Base
 
   validates :balance, :numericality => { :greater_than_or_equal_to => 0 }
 
-  def deposit!(amount)
+  before_validation :set_registration_code
+
+  def set_registration_code
+    self.registration_code = rand.to_s[2..8]
+  end
+
+  def depesit!(amount)
     update_attributes(balance: balance + amount)
   end
 
