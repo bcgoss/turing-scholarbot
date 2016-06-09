@@ -111,7 +111,7 @@ Here are some rules of thumb for using callbacks:
 
 * Callbacks should not affect any other object's state. This not only follows the Single Responsibility Principle, but it also avoids problems in testing. 
 * Callbacks that happen **after** something tend to be the most problematic since they usually trigger an action on another object. 
-* As yourself: "Does this callback affect *only* the internal state of this specific object?" If so, then it's probably ok to use the callback. If not, you may want to use a PORO in order to handle a process involving multiple objects. 
+* Ask yourself: "Does this callback affect *only* the internal state of this specific object?" If so, then it's probably ok to use the callback. If not, you may want to use a PORO in order to handle a process involving multiple objects. 
 * Make callback methods `private` so that they cannot be called outside of the class. 
 * *Warning*: Some methods do not trigger callbacks. Read more [here](http://edgeguides.rubyonrails.org/active_record_callbacks.html#skipping-callbacks). 
 
