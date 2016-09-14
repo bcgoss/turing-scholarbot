@@ -21,23 +21,6 @@ tags: ruby, callbacks, scopes
 * A callback is a hook into an ActiveRecord object's life cycle.
 * Actions can be performed before, after, or around events like create, validate, or save.
 
-### There are [25 total callback methods](http://guides.rubyonrails.org/active_record_callbacks.html).
-
-Here are some of them, listed in the order they run:
-
-* before_validation
-* after_validation
-* before_save
-* before_create (for new records)
-* before_update (for existing records)
-* **[WRITE TO DATABASE]**
-* after_create (for new records)
-* after_update (for existing records)
-* after_save
-* before_destroy
-* after_destroy
-* dependent: :destroy is also a callback of sorts
-
 ### In Real Life
 
 When someone is told to go brush their teeth, there are many things that happen (i.e., _callbacks_) besides the actual tooth brushing (i.e., **the main event**):
@@ -57,6 +40,23 @@ When someone is told to go brush their teeth, there are many things that happen 
 ### As a Class
 
 What is an example of a real-life situation where there would be callbacks triggered either _before_ or _after_ the main event?
+
+### There are [25 total callback methods](http://guides.rubyonrails.org/active_record_callbacks.html).
+
+Here are some of them, listed in the order they run:
+
+* before_validation
+* after_validation
+* before_save
+* before_create (for new records)
+* before_update (for existing records)
+* **[WRITE TO DATABASE]**
+* after_create (for new records)
+* after_update (for existing records)
+* after_save
+* before_destroy
+* after_destroy
+* dependent: :destroy is also a callback of sorts
 
 ### In Rails
 
