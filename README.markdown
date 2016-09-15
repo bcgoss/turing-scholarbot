@@ -198,8 +198,6 @@ It should already be passing, but the controller is ridiculous! Determine what t
 
 Where might this pattern be useful in Little Shop?
 
-Before we talk about scopes, make the two tests in `test/models/course_test.rb` pass using *class methods*. 
-
 ## What are Scopes?
 
 What is an alias?
